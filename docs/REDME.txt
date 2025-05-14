@@ -1,0 +1,4 @@
+Proyecto: Sistema de Gestión para QAC
+Desarrollado por: Wilson León
+Evidencia: GA7-220501096-AA2-EV01
+Descripción: Este repositorio contiene la codificación del módulo de software según requerimientos del proyecto.

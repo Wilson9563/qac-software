@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Registro de Usuario</title>
+</head>
+<body>
+  <h2>Registrar Nuevo Usuario</h2>
+  <form action="usuario" method="post">
+    <label>Cédula o ID:</label><br />
+    <input type="text" name="id" required><br /><br />
+
+    <label>Apellidos:</label><br />
+    <input type="text" name="apellidos" required><br /><br />
+
+    <label>Nombres:</label><br />
+    <input type="text" name="nombres" required><br /><br />
+
+    <label>Rol:</label><br />
+    <select name="rol">
+      <option>Administrador</option>
+      <option>Consultor</option>
+      <option>Cliente</option>
+    </select><br /><br />
+
+    <label>Ciudad:</label><br />
+    <input type="text" name="ciudad"><br /><br />
+
+    <label>Dirección:</label><br />
+    <input type="text" name="direccion"><br /><br />
+
+    <label>Email:</label><br />
+    <input type="email" name="email" required><br /><br />
+
+    <label>Teléfono:</label><br />
+    <input type="text" name="telefono"><br /><br />
+
+    <label>Contraseña:</label><br />
+    <input type="password" name="contrasena" required><br /><br />
+
+    <button type="submit">Guardar</button>
+  </form>
+</body>
+</html>

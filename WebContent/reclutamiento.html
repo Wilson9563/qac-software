@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Registro de Proceso de Reclutamiento</title>
+</head>
+<body>
+  <h2>Registro de Reclutamiento</h2>
+  <form action="reclutamiento" method="post">
+    <label>ID Cliente:</label><br />
+    <input type="text" name="idCliente" required><br /><br />
+
+    <label>Tipo de Cargo:</label>
+    <select name="tipoCargo">
+      <option>Operativo</option>
+      <option>Administrativo</option>
+    </select><br /><br />
+
+    <label>Tipo de Plan:</label>
+    <select name="tipoPlan">
+      <option>Básico</option>
+      <option>Completo</option>
+    </select><br /><br />
+
+    <label>Fecha de Inicio:</label>
+    <input type="date" name="fechaInicio"><br /><br />
+
+    <label>Fecha de Fin:</label>
+    <input type="date" name="fechaFin"><br /><br />
+
+    <label>Pruebas del proceso:</label><br />
+    <label><input type="checkbox" name="pruebas" value="Entrevistas"> Entrevistas</label><br />
+    <label><input type="checkbox" name="pruebas" value="Verificación de Referencias"> Verificación de Referencias</label><br />
+    <label><input type="checkbox" name="pruebas" value="Poligrafía"> Poligrafía</label><br />
+    <label><input type="checkbox" name="pruebas" value="Visita Domiciliaria"> Visita Domiciliaria</label><br />
+    <label><input type="checkbox" name="pruebas" value="Pruebas Psicotécnicas"> Pruebas Psicotécnicas</label><br />
+    <label><input type="checkbox" name="pruebas" value="Asignado por convenio"> Reclutador asignado por convenio comercial</label><br /><br />
+
+    <label>Reclutador Asignado:</label>
+    <input type="text" name="reclutador" required><br /><br />
+
+    <button type="submit">Guardar</button>
+  </form>
+</body>
+</html>

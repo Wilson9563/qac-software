@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Registro de Hallazgo</title>
+</head>
+<body>
+  <h2>Registrar Hallazgo</h2>
+  <form action="hallazgo" method="post">
+    <label>Tipo de Hallazgo:</label>
+    <select name="tipo">
+      <option>No Conformidad Mayor</option>
+      <option>No Conformidad Menor</option>
+      <option>Observación</option>
+      <option>Oportunidad de Mejora</option>
+    </select><br /><br />
+
+    <label>Proceso:</label>
+    <input type="text" name="proceso" placeholder="Ej: Producción"><br /><br />
+
+    <label>Descripción:</label><br />
+    <textarea name="descripcion" rows="4" cols="50"></textarea><br /><br />
+
+    <label>Estado:</label>
+    <select name="estado">
+      <option>Abierto</option>
+      <option>Cerrado</option>
+    </select><br /><br />
+
+    <label>Fecha del Hallazgo:</label><br />
+    <input type="date" name="fechaHallazgo"><br /><br />
+
+    <label>Fecha de Cierre:</label><br />
+    <input type="date" name="fechaCierre"><br /><br />
+
+    <button type="submit">Registrar</button>
+  </form>
+</body>
+</html>

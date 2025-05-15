@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Registro de Auditoría</title>
+</head>
+<body>
+  <h2>Registrar Auditoría</h2>
+  <form action="auditoria" method="post">
+    <label>Tipo:</label>
+    <select name="tipo">
+      <option>Interna</option>
+      <option>Externa</option>
+    </select><br /><br />
+
+    <label>Norma:</label>
+    <select name="norma">
+      <option>ISO 9001</option>
+      <option>ISO 14001</option>
+      <option>ISO 27001</option>
+    </select><br /><br />
+
+    <label>Fecha de Inicio:</label><br />
+    <input type="date" name="fechaInicio"><br /><br />
+
+    <label>Fecha de Fin:</label><br />
+    <input type="date" name="fechaFin"><br /><br />
+
+    <button type="submit">Guardar</button>
+  </form>
+</body>
+</html>
